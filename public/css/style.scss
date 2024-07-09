@@ -93,6 +93,46 @@ body {
   padding-bottom: 75px;
 }
 
+nav {
+  background-color: rgb(5, 5, 250);
+  height: 80px;
+  width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: red;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.active, a:hover{
+  background: #1B9BFF;
+  transition: 5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: rgb(237, 253, 8);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: inline-flex;
+}
+
 .custom_heading {
   position: relative;
 
