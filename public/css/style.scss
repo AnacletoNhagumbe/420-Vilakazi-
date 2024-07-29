@@ -1,4 +1,4 @@
-$btnColor: #00ff00;
+/* $btnColor: #00ff00;
 $cream: #f2d8b9;
 $blue: #f2d8b9;
 $white: #ffffff;
@@ -65,8 +65,8 @@ h3 {
 body {
   @include main-font;
   color: #101010;
-  /*background-color: #ffffff;*/
-} 
+  background-color: #ffffff;
+} */
 
 .layout_padding {
   padding: 75px 0;
@@ -142,7 +142,7 @@ nav a {
   background-attachment: fixed;
 }
 
-.contact-item.contact-container > img{
+/*.contact-item.contact-container > img{
   border-radius: 50%;
 }
 
@@ -250,7 +250,7 @@ a:focus {
 /*end header section*/
 
 // hero section
-.hero_section {
+/*.hero_section {
   text-align: center;
   color: $white;
   display: flex;
@@ -583,7 +583,7 @@ a:focus {
 
 /* footer section*/
 
-.footer_section {
+/*.footer_section {
   background-color: $white;
   padding: 20px;
   font-weight: 500;
