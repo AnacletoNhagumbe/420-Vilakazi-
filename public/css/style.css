@@ -157,7 +157,8 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 45px;
+  width: 80px;
+  height: auto;
 }
 
 .navbar-brand span {
@@ -213,8 +214,8 @@ a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 85%;
-  margin: 0 auto;
+  width: 65%;
+  margin: -170px auto 0;
 }
 
 .hero_section .hero_btn-box a {
@@ -223,7 +224,7 @@ a:focus {
   background-color: transparent;
   border: 1.5px solid #ffffff;
   color: #ffffff;
-  margin-top: 55px;
+  margin-top: 0px;
   text-transform: uppercase;
 }
 
@@ -246,6 +247,7 @@ a:focus {
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
+  color: #0a0a0a;
   margin-top: -150px;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.21);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.21);
@@ -332,6 +334,58 @@ a:focus {
   background-color: #00ff00;
   color: #ffffff;
 }
+
+/* menu */
+
+.menu {
+  padding: 2rem;
+  background-color: #0e0d0d;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-section {
+  margin-bottom: 2rem;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-section ul li {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #0a0a0a;
+  border: 1px solid #e9ecef;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-section ul li:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.menu-section ul li span {
+  color: #6c757d;
+}
+
+.menu-section ul li:hover span {
+  color: #ffffff;
+}
+
+/* end menu */
 
 .why_section .why_container .img_box {
   width: 85%;
