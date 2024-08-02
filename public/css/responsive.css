@@ -90,6 +90,7 @@
 @media (max-width: 480px) {
     .hero_section h1 {
         font-size: 36px;
+        margin: 0 auto;
     }
 }
 
