@@ -425,15 +425,20 @@ a:focus {
   line-height: 1.6;
 }
 
-.menu .price.list ul li {
+.price ul li span{
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  display: flex;
   justify-content: space-between;
   font-size: 16px;
+  text-align: center;
+  background-color: #111111;
+ float: left;
+}
+.price, h2{
+  text-align: center;
 }
 
-.menu .price.list ul li span {
+/*.menu .price.list ul li span {
   font-weight: bold;
   color: #ffcc00;
 }
