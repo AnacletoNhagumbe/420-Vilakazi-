@@ -571,6 +571,11 @@ a:focus {
   position: relative;
 }
 
+.price, h2{
+  text-align: center;
+  background-color: #00ff00;
+}
+
 /* footer section*/
 .footer_section {
   background-color: #ffffff;
