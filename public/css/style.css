@@ -350,8 +350,8 @@ a:focus {
 }
 /* menu */
 .menu-section {
-  background-image: url(../images/pexels-pavel-danilyuk-8551295.jpg); 
-  background-size: cover; 
+  background-image: url(../images/bmenu.jpg); 
+  background-size: 1000px; 
   background-position: center; 
   background-repeat: no-repeat; 
   padding: 60px 20px; 
@@ -364,7 +364,7 @@ a:focus {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .menu-grid {
-  background-image: url(../images/pexels-rdne-8140247.jpg);
+  /*background-image: url(../images/pexels-rdne-8140247.jpg);*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -374,7 +374,7 @@ a:focus {
 .section {
   border-radius: 10px;
   padding: 20px;
-  background-color: rgba(238, 224, 224, 0.6);
+  background-color: rgba(204, 165, 165, 0.6);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(250, 247, 247, 0.3);
 }
@@ -434,26 +434,12 @@ a:focus {
   font-size: 14px;
   line-height: 1.6;
 }
-.section ul li span {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 2px 6px;
-  background-color: #ddd;
-  color: #333;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 14px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
+/*price*/
 .section-booysen {
   padding: 20px;
   font-family: Arial, sans-serif;
   border-radius: 24px;
-  background-color: #b9fa93;
+  background-color: #225802;
 }
 
 .section-booysen .price {
@@ -479,7 +465,7 @@ a:focus {
 
 .section-booysen .price .bold {
   font-weight: bold;
-  color: #333;
+  color: #131111;
   margin-left: 10px;
 }
 
@@ -708,7 +694,7 @@ a:focus {
 .booysen {
   background-color: #4CAF50;
   color: white;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
 }
 
@@ -717,11 +703,11 @@ main {
 }
 
 .product {
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
+  background-color: #fdfafa;
+  border: 1px solid #eee3e3;
   border-radius: 8px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   position: relative;
   color: black;
