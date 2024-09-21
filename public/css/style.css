@@ -818,4 +818,72 @@ button:hover {
 }
 
 /* end footer section*/
+
+/* .appointment {
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/weedman.jpg); 
+  background-position: center center;
+  background-color: #00E4FF;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.appointment .appointment-form {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .4));
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.appointment .appointment-time {
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, .2));
+  object-fit: cover;
+  border-radius: 10px;
+} */
+.appointment-form,
+  .appointment-time {
+    background-color: rgba(247, 227, 227, 0.7); 
+    border-radius: 10px;
+  }
+
+  .form-control,
+  .form-select,
+  textarea {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white;
+    height: 50px; 
+  }
+
+  .equal-height {
+    height: 50px; 
+  }
+
+  .form-control::placeholder,
+  textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+  }
+
+  .btn-primary {
+    background-color: #007bff; 
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3; 
+  }
+
+  .text-primary {
+    color: #0d6efd; 
+  }
+/*** Appointment End ***/
+
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .contact-form {
+  background: rgba(161, 101, 101, 0.6);
+}
+
 /*# sourceMappingURL=style.css.map */
