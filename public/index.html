@@ -34,50 +34,68 @@
 </head>
 
 <body>
-  <div class="hero_area">
+
     <!-- header section strats -->
     <header class="header_section">
+      <div class="top-bar sticky-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <div class="contact-info">
+            <a href="mailto:itskatlie.mat1234@gmail.com" class="contact-item">itskatlie.mat1234@gmail.com</a>
+            <span class="separator">|</span>
+            <a href="tel:+27772988855" class="contact-item">0772988855</a>
+            <span class="separator">|</span>
+            <span class="location-icon"><i class="fas fa-map-marker-alt"></i> 7117 Vilakazi Str, Soweto</span>
+          </div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/420_vilakazi" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+277298855" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <span class="time-icon" id="operating-status"></span>
+          </div>
+        </div>
+      </div>
+      
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
-              <img src="./images/420Logo.png" alt="420 Vilakazi Logo" />
-            <span>
-              420 Vilakazi
-            </span>
-          </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menu</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact us</a>
-                  </li>
-                </ul>
+          <img src="./images/420Logo.png" alt="420 Vilakazi Logo" width="150px" height="150px" style="border-radius: 50%;" />
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="price.html">Price</a>
+                  <a class="dropdown-item" href="order.html">Order</a>
+                  <a class="dropdown-item" href="testimonial.html">Testimonial</a>
                 </div>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-    <br>
-        <header class="header" id="header">
-            <h1>Welcome to My Weed Shop</h1>
-            <br>
-            <p>Your one-stop shop for premium weed, edibles, extracts, and shrooms</p>
-        </header>
       </div>
-    </div>
-    </header><!-- about section -->
+      
+      <header class="header" id="header">
+        <h1>420 Vilakazi</h1>
+        <h2>Welcome to My Weed Shop</h2>
+        <p>Your one-stop shop for premium weed, edibles, extracts, and shrooms</p>
+      </header>
+    </header>
+    
+    
+    <!-- about section -->
   <section class="about_section layout_padding" id="about">
     <div class="about_container">
       <div class="container">
@@ -561,6 +579,49 @@
             }
         });
     });
+
+    function checkOperatingHours() {
+  const now = new Date();
+  const day = now.getDay(); 
+  const hour = now.getHours();
+  const minute = now.getMinutes();
+
+  const openTime = 10;
+  const closeTime = 19;
+  
+  const isOpen = (day >= 2 && day <= 6) && (hour > 10 && (hour < 19 || (hour === 19 && minute === 0)));
+
+  const operatingStatusElement = document.getElementById('operating-status');
+  if (day === 1) { 
+    operatingStatusElement.innerHTML = '<i class="fas fa-clock"></i> Closed';
+    operatingStatusElement.style.color = 'red'; 
+  } else if (isOpen) {
+    operatingStatusElement.innerHTML = '<i class="fas fa-clock"></i> Open';
+    operatingStatusElement.style.color = 'green'; 
+  } else {
+    operatingStatusElement.innerHTML = '<i class="fas fa-clock"></i> Closed';
+    operatingStatusElement.style.color = 'red'; 
+  }
+}
+
+function updateStatus() {
+            const statusIcon = document.getElementById("status-icon");
+            const statusText = document.getElementById("status-text");
+
+            if (checkBusinessStatus()) {
+                statusIcon.classList.add("open-icon");
+                statusIcon.classList.remove("closed-icon");
+                statusText.textContent = "Open";
+            } else {
+                statusIcon.classList.add("closed-icon");
+                statusIcon.classList.remove("open-icon");
+                statusText.textContent = "Closed";
+            }
+        }
+
+
+document.addEventListener('DOMContentLoaded', checkOperatingHours);
+
     </script>
 
 </body>
