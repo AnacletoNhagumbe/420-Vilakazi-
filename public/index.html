@@ -82,7 +82,7 @@
     <div class="about_container">
       <div class="container">
         <div class="detail">
-          <h2 class="custom_heading" style="text-align: center;">
+          <h2 class="custom_heading" style="color: aliceblue;">
             About Us
           </h2>
           <p>
@@ -108,7 +108,7 @@
 
   <!-- Menu section -->
   <section class="menu-section">
-    <h2>Menu</h2>
+    <h2 style="color: aliceblue;">Menu</h2>
     <div class="menu-grid">
       <div class="section pre-roll">
           <h3>Strains<i class="fas fa-cannabis"></i></h3>
@@ -168,35 +168,37 @@
     </div>
 </section>
   <!--Overview section-->
-          <header class="booysen">
-            <h1>Cannabis Products Overview</h1>
-          </header>
-          <main style="display: flex; flex-wrap: wrap; gap: 20px;">
-            <section class="product" id="weed-strains" style="flex: 1; min-width: 250px; max-width: 300px; text-align: center;">
-              <img src="./images/pexels-kindelmedia-7773105.jpg" alt="" style="width: 100%; height: 50%;">
-              <h2>Strains</h2>
-              <p>Weed strains are various types of cannabis plants with distinct characteristics. Each strain has unique effects, flavors, and potency.</p>
-            </section>
-
-            <section class="product" id="weed-strains" style="flex: 1; min-width: 250px; max-width: 300px; text-align: center;">
-              <img src="./images/Cannabis-Edibles.jpg" alt="" style="width: 100%; height: 50%;">
-              <h2>Edibles</h2>
-              <p>Edibles are cannabis-infused food products that provide a different experience compared to smoking or vaping. They come in many forms such as gummies, chocolates, and baked goods.</p>
-            </section>
-
-            <section class="product" id="weed-strains" style="flex: 1; min-width: 250px; max-width: 300px; text-align: center;">
-              <img src="./images/shroom.jpg" alt="" style="width: 100%; height: 45%;">
-              <h2>Shrooms</h2>
-              <p>Shrooms, or psychedelic mushrooms, are fungi that contain psychoactive compounds. They are used for their mind-altering effects.</p>
-            </section>
-
-            <section class="product" id="weed-strains" style="flex: 1; min-width: 250px; max-width: 300px; text-align: center;">
-              <img src="./images/pexels-kindelmedia-7667908.jpg" alt="" style="width: 100%; height: 50%;">
-              <h2>Extracts</h2>
-              <p>Extracts are concentrated forms of cannabis that can include oils, tinctures, and concentrates. They offer potent effects and are used in various ways.</p>
-            </section>
-          </main>
+  <header class="booysen">
+    <h1 style="text-align: center;;">Cannabis Products Overview</h1>
+  </header>
+  <main class="product-container">
+    <section class="product" id="weed-strains">
+      <img src="./images/pexels-kindelmedia-7773105.jpg" alt="">
+      <h2>Strains</h2>
+      <p>Weed strains are various types of cannabis plants with distinct characteristics. Each strain has unique effects, flavors, and potency.</p>
+    </section>
+  
+    <section class="product" id="edibles">
+      <img src="./images/Cannabis-Edibles.jpg" alt="">
+      <h2>Edibles</h2>
+      <p>Edibles are cannabis-infused food products that provide a different experience compared to smoking or vaping. They come in many forms such as gummies, chocolates, and baked goods.</p>
+    </section>
+  
+    <section class="product" id="shrooms">
+      <img src="./images/shroom.jpg" alt="">
+      <h2>Shrooms</h2>
+      <p>Shrooms, or psychedelic mushrooms, are fungi that contain psychoactive compounds. They are used for their mind-altering effects.</p>
+    </section>
+  
+    <section class="product" id="extracts">
+      <img src="./images/pexels-kindelmedia-7667908.jpg" alt="">
+      <h2>Extracts</h2>
+      <p>Extracts are concentrated forms of cannabis that can include oils, tinctures, and concentrates. They offer potent effects and are used in various ways.</p>
+    </section>
+  </main>
+  
 <!--end of overview-->
+<!-- Pricing -->
   <section class="section-booysen">
      <div class="price">
             <h2 style="font-size: 50px;">Price List</h2>
@@ -223,102 +225,84 @@
                <p>FOIL<span class="bold">R2</span></p>
             </div>
   </section>
-
+  <!-- end pricing -->
   <!-- end menu section -->
 
 <!-- Appointment -->
-<div class="container-fluid appointment py-5">
-  <div class="container py-5">
-      <div class="row g-5 align-items-center">
-          <div class="col-lg-6">
-              <div class="appointment-form p-5">
-                  <p class="fs-4 text-uppercase text-primary">Order Your Cannabis</p>
-                  <h1 class="display-4 mb-4 text-white">Place your order for in-store pickup.</h1>
-                  <form action="https://formspree.io/f/mrbzwpjg" method="POST">
-                      <div class="row gy-3 gx-4">
-                          <div class="col-lg-6">
-                              <input type="text" class="form-control py-3 border-white bg-transparent text-white" placeholder="Full Name">
-                          </div>
-                          <div class="col-lg-6">
-                              <input type="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
-                          </div>
-                          <div class="col-lg-6">
-                              <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
-                                  <option selected>Choose Product</option>
-                                  <option value="1">SUNDANCE KID OUTDOOR (SATIVA)</option>
-                                  <option value="2">AMNESIA HAZE OUTDOOR (SATIVA)</option>
-                                  <option value="3">PAPAYA OUTDOOR (INDICA)</option>
-                                  <option value="4">CANDY CRUSH (INDICA)</option>
-                                  <option value="5">AMNESIA HAZE (SATIVA)</option>
-                                  <option value="6">MIMOSA (SATIVA)</option>
-                                  <option value="7">CHERRY PIE (INDICA)</option>
-                                  <option value="8">GELATO 33 (INDICA)</option>
-                                  <option value="9">GARLIC BREATH (INDICA)</option>
-                                  <option value="10">PEACH Oz (SATIVA)</option>
-                                  <option value="11">ETHOS COOKIES (HYBRID)</option>
-                                  <option value="12">SUNDANCE KID (SATIVA)</option>
-                                  <option value="13">End Game (HYBRID)</option>
-                                  <option value="14">CREAM CARAMEL (INDICA)</option>
-                              </select>
-                          </div>
-                          <div class="col-lg-6">
-                            <label for="quantity">Quantity:</label>
-                            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
-                          </div>
-                          <div class="col-lg-12">
-                            <label for="notes">Special Instructions (Optional):</label>
-                            <textarea id="notes" name="notes" placeholder="Enter any special instructions..."></textarea>
-                          </div>
-                          <div class="col-lg-12">
-                            <button type="submit" class="submit-btn">Place Order</button>
-                          </div>
-                      </div>
-                      <p id="my-form-status"></p>
-                  </form>
-              </div>
-          </div>
-          <div class="col-lg-6">
-              <div class="appointment-time p-5">
-                  <h1 class="display-5 mb-4">Opening Hours</h1>
-                  <div class="d-flex justify-content-between fs-5 text-white">
-                      <p>Tuesday:</p>
-                      <p>10:00 am – 07:00 pm</p>
-                  </div>
-                  <div class="d-flex justify-content-between fs-5 text-white">
-                      <p>Wednesday:</p>
-                      <p>10:00 am – 07:00 pm</p>
-                  </div>
-                  <div class="d-flex justify-content-between fs-5 text-white">
-                      <p>Thursday:</p>
-                      <p>10:00 am – 07:00 pm</p>
-                  </div>
-                  <div class="d-flex justify-content-between fs-5 text-white">
-                      <p>Friday:</p>
-                      <p>10:00 am – 07:00 pm</p>
-                  </div>
-                  <div class="d-flex justify-content-between fs-5 text-white">
-                      <p>Saturday:</p>:</p>
-                      <p>10:00 am – 07:00 pm</p>
-                  </div>
-                  <div class="d-flex justify-content-between fs-5 text-white mb-4">
-                      <p>Sunday:</p>
-                      <p>10:00 am – 07:00 pm</p>
-                  </div>
-                  <div class="d-flex justify-content-between fs-5 text-white mb-4">
-                      <p>Monday:</p>
-                      <p>CLOSED</p>
-                  </div>
-                  <!-- <p class="text-dark">Check out seasonal discounts for best offers.</p> -->
-              </div>
-          </div>
-      </div>
+<div class="container-booysen">
+  <div class="order-in">
+      <h2>Order In</h2>
+      <form action="https://formspree.io/f/mrbzwpjg" method="POST">
+          <input type="text" placeholder="Your Name" name="your name" required>
+          <input type="number" required min="21" name="age" placeholder="Enter your age">
+            <select class="products" required>
+              <option selected>Choose Product</option>
+              <option value="1">SUNDANCE KID OUTDOOR (SATIVA)</option>
+              <option value="2">AMNESIA HAZE OUTDOOR (SATIVA)</option>
+              <option value="3">PAPAYA OUTDOOR (INDICA)</option>
+              <option value="4">CANDY CRUSH (INDICA)</option>
+              <option value="5">AMNESIA HAZE (SATIVA)</option>
+              <option value="6">MIMOSA (SATIVA)</option>
+              <option value="7">CHERRY PIE (INDICA)</option>
+              <option value="8">GELATO 33 (INDICA)</option>
+              <option value="9">GARLIC BREATH (INDICA)</option>
+              <option value="10">PEACH Oz (SATIVA)</option>
+              <option value="11">ETHOS COOKIES (HYBRID)</option>
+              <option value="12">SUNDANCE KID (SATIVA)</option>
+              <option value="13">End Game (HYBRID)</option>
+              <option value="14">CREAM CARAMEL (INDICA)</option>
+            </select>
+            <select class="products" required>
+              <option selected>Select Product Category:</option>
+              <option value="flower">Flower</option>
+              <option value="edibles">Edibles</option>
+              <option value="shrooms">Shrooms</option>
+              <option value="extracts">Extracts</option>
+            </select>
+          <input type="email" placeholder="Your Email" name="email" required>
+          <textarea placeholder="Your Order" name="your order" required></textarea>
+          <button type="submit">Submit Order</button>
+      </form>
   </div>
+  <div class="operating-hours">
+      <h2>Operating Hours</h2>
+      <div class="hours-container">
+          <div class="day">
+              <p>Tuesday:</p>
+              <p>10:00 am – 07:00 pm</p>
+          </div>
+          <div class="day">
+              <p>Wednesday:</p>
+              <p>10:00 am – 07:00 pm</p>
+          </div>
+          <div class="day">
+              <p>Thursday:</p>
+              <p>10:00 am – 07:00 pm</p>
+          </div>
+          <div class="day">
+              <p>Friday:</p>
+              <p>10:00 am – 07:00 pm</p>
+          </div>
+          <div class="day">
+              <p>Saturday:</p>
+              <p>10:00 am – 07:00 pm</p>
+          </div>
+          <div class="day">
+              <p>Sunday:</p>
+              <p>10:00 am – 07:00 pm</p>
+          </div>
+          <div class="day">
+              <p>Monday:</p>
+              <p>CLOSED</p>
+          </div></div>
+  </div>
+</div>
   <!-- End Appointment-->
 
   <!-- client section -->
   <section class="client_section layout_padding">
     <div class="d-flex justify-content-center">
-      <h2 class="custom_heading">
+      <h2 class="custom_heading" style="color:aliceblue;">
         Testimonial
       </h2>
     </div>
@@ -424,114 +408,77 @@
 
 
   <!-- contact us section-->
-  <div class="container-fluid py-5" id="contact">
-    <div class="container py-5">
-        <div class="row g-4 align-items-center">
-            <div class="col-12">
-                <div class="row g-4">
-                    <div class="col-lg-4">
-                        <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                            <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
-                            <div>
-                                <h4>Address</h4>
-                                <p class="mb-0">7117 Vilakazi Str,Orlando West,Soweto,1804</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                            <i class="fas fa-envelope fa-2x text-primary me-4"></i>
-                            <div>
-                                <h4>Mail Us</h4>
-                                <p class="mb-0">itskatlie.mat1234@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                            <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
-                            <div>
-                                <h4>Cellphone</h4>
-                                <p class="mb-0">(+27) 77 298 8855</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="rounded">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.7292607860413!2d27.900026475416414!3d-26.237985177055744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a7481455970d%3A0x541aac9f256313a3!2s7117%20Vilakazi%20St%2C%20Orlando%20West%2C%20Soweto%2C%201804!5e0!3m2!1sen!2sza!4v1726917347128!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class=" text-center p-4 rounded-bottom bg-primary">
-                    <h4 class="text-white fw-bold">Follow Us</h4>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <!-- <a href="https:/www.facebook/Lana's" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a> -->
-                        <!--<a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>-->
-                        <a href="https://www.instagram.com/420_vilakazi" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="https:/wa.me/+27772988855" class="btn btn-light btn-light-outline-0 btn-square rounded-circle"><i class="fab fa-whatsapp"></i></a>
-                    </div>   
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-  <!-- <div class="contact-container">
-    <div class="contact-info">
-        <h1>Contact Us</h1>
-        <div class="info">
-            <div class="info-item">
+  <section id="contact-booysen" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-primary mb-4">Contact Information</h2>
+      <div class="row text-center">
+        <!-- Address Card -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Address</h5>
+              <p class="card-text">
                 <i class="fas fa-map-marker-alt"></i>
-                <p>7117 Vilakazi Str,<br>Orlando West,<br>Soweto,<br>1804</p>
-            </div>
-            <div class="info-item">
-                <a href="tel+27772988855"><i class="fas fa-phone"></i>+27772988855</p>
-            </div>
-            <div class="info-item">
-                <a href="mailto:itskatlie.mat1234@gmail.com"><i class="fas fa-envelope"></i>itskatlie.mat1234@gmail.com</a>
-            </div>
+                7117 Vilakazi Str,
+                Orlando West,
+                Soweto,
+                1804
+              </p>
         </div>
-        <div class="social-media">
-            <a href="https://www.instagram.com/420_vilakazi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/+277298855" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+      </div></div>
+        <!-- Email Card -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Email</h5>
+              <p></p>
+              <p class="card-text">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:itskatlie.mat1234@gmail.com" class="text-dark">itskatlie.mat1234@gmail.com</a>
+              </p>
+              <p></p>
+              <p></p>
+            </div></div>
         </div>
-    </div>
-    <div class="contact-form">
-        <form id="contactForm" action="https://formspree.io/f/mvgplazg"
-        method="POST">
-            <h2>Send Message</h2>
-            <div class="form-group">
-                <input type="text" name="name" id="name" placeholder="Full Name" required>
+        <!-- Phone Card -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Phone</h5>
+              <p></p>
+              <p class="card-text">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+27772988855" class="text-dark">0772988855</a>
+              </p>
+              <p></p>
+              <p></p>
             </div>
-            <div class="form-group">
-                <input type="email" name="email" id="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <textarea placeholder="Message" name="message" id="message" required></textarea>
-            </div>
-            <button type="submit">Send</button>
-            <p id="responseMessage"></p>
-        </form>
-    </div>
-</div> -->
-
+          </div></div>
+      </div>
+      <!-- Location Map -->
+      <div class="text-center mt-4">
+        <h5 class="text-primary">Find Us Here:</h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.050885442438!2d-27.7763!3d-26.2391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7c11c748e2d7f%3A0x2ee02a34d511cb0f!2s7117%20Vilakazi%20St%2C%20Orlando%20West%2C%20Soweto%2C%201804!5e0!3m2!1sen!2sza!4v1615579385874!5m2!1sen!2sza"
+          width="100%"
+          height="600"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"></iframe>
+      </div></div>
+  </section>
 <!-- end contact section -->
 
 <!-- footer section --> 
-    <!-- <section class="container-fluid footer_section">
-      <p>
-        &copy; 2024 All Rights Reserved By
-        <a>Anacleto aka Booysen</a>
-      </p>
-    </section> -->
+
     <footer class="footer bg-dark text-light py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-4">
             <h5 class="text-primary">Contact Us</h5>
             <p><i class="fas fa-map-marker-alt"></i>7117 Vilakazi Str,<br>Orlando West,<br>Soweto,<br>1804</p>
-            <p><i class="fas fa-phone-alt"></i>0772988855</p>
-            <p><i class="fas fa-envelope"></i>itskatlie.mat1234@gmail.com</p>
+            <p><a href="tel:+27772988855" class="fas fa-phone-alt">0772988855</a></p>
+            <p><a href="mailto:itskatlie.mat1234@gmail.com" class="fas fa-envelope">itskatlie.mat1234@gmail.com</a></p>
           </div>
           <div class="col-md-4 mb-4">
             <h5 class="text-primary">Quick Links</h5>
@@ -543,12 +490,8 @@
             </ul>
           </div>
           <div class="col-md-4 mb-4">
-            <h5 class="text-primary">Newsletter Signup</h5>
-            <form action="https://formspree.io/f/mrbzwpjg" method="POST">
-              <div class="input-group">
-                <input type="email" class="form-control" placeholder="Enter your email" required>
-                <button class="btn btn-primary" type="submit">Subscribe</button>
-              </div>
+            <h5 class="text-primary">Newsletter</h5>
+            <p>Stay in the loop with the latest strains, products, and exclusive offers from our shop! Subscribe to our newsletter for insider tips, special promotions, and updates on events that elevate your cannabis experience.</p>
             </form>
           </div>
         </div>
@@ -559,8 +502,8 @@
           </p>
           <div>
             <!-- <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a> -->
-            <a href="https://www.instagram.com/420_vilakazi" class="text-light me-3"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/+277298855" class="text-light"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/420_vilakazi" class="text-light me-3" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+277298855" class="text-light" target="_blank"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>

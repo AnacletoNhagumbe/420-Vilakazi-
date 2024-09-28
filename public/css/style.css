@@ -72,7 +72,7 @@ body {
   left: -45px;
   width: 37px;
   height: 32px;
-  background-image: url(../images/herbal.png);
+  /* background-image: url(../images/herbal.png); */
   background-size: cover;
 }
 
@@ -350,8 +350,8 @@ a:focus {
 }
 /* menu */
 .menu-section {
-  background-image: url(../images/bmenu.jpg); 
-  background-size: 1000px; 
+  background-image: url(../images/pexels-pavel-danilyuk-8551295.jpg);
+  background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
   padding: 60px 20px; 
@@ -438,8 +438,8 @@ a:focus {
 .section-booysen {
   padding: 20px;
   font-family: Arial, sans-serif;
-  border-radius: 24px;
-  background-color: #225802;
+  border-radius: 0;
+  background-color: #91fd52;
 }
 
 .section-booysen .price {
@@ -691,27 +691,61 @@ a:focus {
 }
 
 /* Overview */
-.booysen {
-  background-color: #4CAF50;
-  color: white;
-  padding: 50px;
-  text-align: center;
-}
-
-main {
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 20px;
+  gap: 20px; 
 }
 
 .product {
-  background-color: #fdfafa;
-  border: 1px solid #eee3e3;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  padding: 30px;
+  background-color: #fff; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px; 
+  max-width: 500px; 
   text-align: center;
-  position: relative;
-  color: black;
+  margin: 10px;
+  padding: 15px; 
+  transition: transform 0.3s; 
 }
+
+.product:hover{
+  background-color: yellowgreen;
+}
+
+.product img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+.product h2 {
+
+  font-size: 1.8rem bolder!; 
+  margin: 10px 0; 
+}
+
+.product p {
+  font-size: 1.1rem; 
+  margin: 0; 
+  padding: 0 10px;
+  color: black; 
+}
+
+.product:hover {
+  transform: scale(1.05); 
+}
+
+@media (max-width: 600px) {
+  .product {
+      flex: 1 1 100%; 
+  }
+}
+/* end overview */
 
 /*.product img {
   max-width: 100%;
@@ -816,6 +850,15 @@ button:hover {
 .footer_section a {
   color: #292929;
 }
+.footer a {
+  color: #ffffff; 
+  transition: color 0.3s ease; 
+}
+
+.footer a:hover {
+  color: #ffcc00; 
+  text-decoration: underline; 
+}
 
 /* end footer section*/
 
@@ -875,15 +918,170 @@ button:hover {
   }
 /*** Appointment End ***/
 
-.contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+.container-booysen {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  
+  background-image: url(../images/pexels-rdne-8140247.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 60px 20px;
 }
 
-.contact .contact-form {
-  background: rgba(161, 101, 101, 0.6);
+.order-in, .operating-hours {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  width:48%; 
+  transition: transform 0.3s;
+  color: black;
+  flex-wrap: wrap; 
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8); 
+  color: #333; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.products {
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.order-in:hover, .operating-hours:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input, textarea, .products {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.operating-hours ul {
+  list-style-type: none;
+}
+
+.operating-hours li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.operating-hours span {
+  font-weight: bold;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+  }
+
+  .order-in, .operating-hours {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+}
+
+.hours-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.day {
+  display: flex;
+  justify-content: space-between; 
+  margin: 10px 0; 
+}
+
+.day p {
+  margin: 10px; 
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .day {
+      flex-direction: column; 
+      align-items: flex-start; 
+  }
+
+  .day p {
+      text-align: left; 
+      justify-content: space-between;
+  }
+}
+
+/* Contact Info Section */
+#contact-booysen {
+  background-color: #e4fc78; 
+}
+
+
+.card {
+  border: none; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s; 
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+
+.card-title {
+  font-size: 1.25rem; 
+  font-weight: bold; 
+}
+
+
+.card-text {
+  font-size: 1rem; 
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px; 
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
